@@ -3,48 +3,38 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="DELTA MOVIES BY SHOWROV - movie discovery and official trailer website">
 <title>DELTA MOVIES BY SHOWROV</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="nav">
-  <div class="logo">DELTA MOVIES BY SHOWROV</div>
+  <a class="logo" href="#home">DELTA <span>MOVIES</span> <small>BY SHOWROV</small></a>
   <nav><a href="#home">Home</a><a href="#movies">Movies</a><a href="#genres">Genres</a></nav>
-  <div class="search"><input id="search" placeholder="Search movies..."> 🔍</div>
+  <div class="search"><input id="search" autocomplete="off" placeholder="Search 100 movies..."> 🔍</div>
 </header>
-
 <main id="home">
 <section class="hero">
   <div class="hero-content">
-    <p class="tag">WELCOME TO CINESTREAM BD</p>
-    <h1>Movies. Trailers.<br><span>Your Cinema.</span></h1>
-    <p>Discover popular Bollywood and Hollywood movies with official trailers and legal watch options.</p>
+    <p class="tag">DELTA MOVIES BY SHOWROV</p>
+    <h1>100 Movies.<br><span>One Cinema Hub.</span></h1>
+    <p>Explore popular Bollywood and Hollywood movies, filter by genre, and open official trailer searches.</p>
     <a class="btn" href="#movies">Explore Movies</a>
   </div>
 </section>
-
 <section id="movies" class="section">
-  <div class="section-head"><h2>🔥 Popular Movies</h2><span id="count"></span></div>
+  <div class="section-head"><h2>🎬 All Movies</h2><span id="count"></span></div>
   <div id="grid" class="grid"></div>
 </section>
-
 <section id="genres" class="section">
   <h2>Browse Genres</h2>
-  <div class="chips">
-    <button data-genre="All">All</button><button data-genre="Action">Action</button>
-    <button data-genre="Drama">Drama</button><button data-genre="Comedy">Comedy</button>
-    <button data-genre="Sci-Fi">Sci-Fi</button><button data-genre="Thriller">Thriller</button>
-  </div>
+  <div id="chips" class="chips"></div>
 </section>
 </main>
-
-<div id="modal" class="modal">
-  <div class="modal-box">
-    <button id="close">×</button><div id="details"></div>
-  </div>
+<div id="modal" class="modal" aria-hidden="true">
+ <div class="modal-box"><button id="close" aria-label="Close">×</button><div id="details"></div></div>
 </div>
-
-<footer>© 2026 DELTA MOVIES BY SHOWROV · Legal trailers and watch links only.</footer>
+<footer>© 2026 DELTA MOVIES BY SHOWROV · Movie discovery and official trailer links.</footer>
 <script src="script.js"></script>
 </body>
 </html>

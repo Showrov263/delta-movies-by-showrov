@@ -1,9 +1,15 @@
-# DELTA MOVIES BY SHOWROV
-A responsive legal movie discovery/streaming-style website.
+# DELTA MOVIES BY SHOWROV — 100 Movie Edition
 
-## Run
-Open `index.html` in a browser.
+Static HTML/CSS/JavaScript movie discovery website.
 
-## Deploy
-Upload the three files to any static hosting service such as GitHub Pages, Netlify, or Vercel.
-The demo uses official-trailer search links rather than pirated movie streams.
+## Included
+- 100 Bollywood and Hollywood movie entries
+- Search
+- Genre filters
+- Responsive mobile design
+- Movie details modal
+- Official YouTube trailer-search links
+- No pirated movie files or unauthorized streaming links
+
+## Deploy to Vercel
+Upload `index.html`, `style.css`, and `script.js` to your GitHub repository, then import the repository into Vercel. No build command is needed for this static site.
